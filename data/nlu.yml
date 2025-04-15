@@ -1,0 +1,687 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: faq/how_do_you_determine_if_a_stock_is_under
+  examples: |
+    - How do you determine if a stock is undervalued?
+- intent: faq/what_financial_ratios_do_you_consider_mo
+  examples: |
+    - What financial ratios do you consider most important when analyzing a company?
+- intent: faq/how_do_you_think_about_intrinsic_value_
+  examples: |
+    - How do you think about intrinsic value?
+- intent: faq/how_do_you_decide_when_to_buy_or_sell_a_
+  examples: |
+    - How do you decide when to buy or sell a stock?
+- intent: faq/what_is_your_opinion_on_index_funds_vs_a
+  examples: |
+    - What is your opinion on index funds vs. actively managed funds?
+- intent: faq/how_important_is_a_company_s_management_
+  examples: |
+    - How important is a company's management team in your investment decisions?
+- intent: faq/what_common_mistakes_do_investors_make_
+  examples: |
+    - What common mistakes do investors make?
+- intent: faq/how_should_an_investor_handle_market_vol
+  examples: |
+    - How should an investor handle market volatility?
+- intent: faq/what_are_the_most_dangerous_biases_in_in
+  examples: |
+    - What are the most dangerous biases in investing?
+- intent: faq/how_do_you_think_about_risk_in_investing
+  examples: |
+    - How do you think about risk in investing?
+- intent: faq/what_are_your_thoughts_on_investing_in_b
+  examples: |
+    - What are your thoughts on investing in bonds vs. stocks?
+- intent: faq/how_does_inflation_impact_your_investing
+  examples: |
+    - How does inflation impact your investing strategy?
+- intent: faq/what_do_you_think_about_investing_in_gol
+  examples: |
+    - What do you think about investing in gold or cryptocurrencies?
+- intent: faq/what_industries_do_you_think_have_the_mo
+  examples: |
+    - What industries do you think have the most long-term potential?
+- intent: faq/how_should_a_beginner_start_investing_
+  examples: |
+    - How should a beginner start investing?
+- intent: faq/what_books_do_you_recommend_for_learning
+  examples: |
+    - What books do you recommend for learning about investing?
+- intent: faq/how_do_you_evaluate_a_company_s_competit
+  examples: |
+    - How do you evaluate a company's competitive advantage?
+- intent: faq/what_do_you_think_about_investing_in_sma
+  examples: |
+    - What do you think about investing in small-cap stocks?
+- intent: faq/what_role_does_economic_forecasting_play
+  examples: |
+    - What role does economic forecasting play in your investment decisions?
+- intent: faq/what_are_the_key_traits_of_a_successful_
+  examples: |
+    - What are the key traits of a successful business leader?
+- intent: faq/how_do_you_build_a_company_with_a_strong
+  examples: |
+    - How do you build a company with a strong competitive moat?
+- intent: faq/what_is_the_most_important_factor_in_a_c
+  examples: |
+    - What is the most important factor in a company's long-term success?
+- intent: faq/how_should_a_ceo_allocate_capital_within
+  examples: |
+    - How should a CEO allocate capital within a company?
+- intent: faq/what_advice_would_you_give_to_entreprene
+  examples: |
+    - What advice would you give to entrepreneurs starting a new business?
+- intent: faq/how_do_you_assess_the_quality_of_a_busin
+  examples: |
+    - How do you assess the quality of a business model?
+- intent: faq/what_are_the_biggest_mistakes_that_busin
+  examples: |
+    - What are the biggest mistakes that business owners make?
+- intent: faq/what_makes_a_company_a_great_long_term_i
+  examples: |
+    - What makes a company a great long-term investment?
+- intent: faq/how_do_you_think_about_branding_and_repu
+  examples: |
+    - How do you think about branding and reputation in business?
+- intent: faq/how_should_companies_handle_economic_dow
+  examples: |
+    - How should companies handle economic downturns?
+- intent: faq/what_are_the_most_important_lessons_you_
+  examples: |
+    - What are the most important lessons you've learned from running Berkshire Hathaway?
+- intent: faq/how_do_you_approach_mergers_and_acquisit
+  examples: |
+    - How do you approach mergers and acquisitions?
+- intent: faq/what_industries_do_you_think_will_strugg
+  examples: |
+    - What industries do you think will struggle in the future?
+- intent: faq/how_do_you_decide_whether_to_reinvest_pr
+  examples: |
+    - How do you decide whether to reinvest profits or distribute dividends?
+- intent: faq/what_do_you_look_for_in_a_company_s_fina
+  examples: |
+    - What do you look for in a company’s financial statements?
+- intent: faq/how_do_you_assess_a_company_s_debt_level
+  examples: |
+    - How do you assess a company's debt levels?
+- intent: faq/what_is_your_opinion_on_companies_buying
+  examples: |
+    - What is your opinion on companies buying back their own stock?
+- intent: faq/what_do_you_think_about_the_role_of_inno
+  examples: |
+    - What do you think about the role of innovation in business success?
+- intent: faq/how_should_businesses_think_about_long_t
+  examples: |
+    - How should businesses think about long-term planning?
+- intent: faq/what_is_your_best_advice_for_managing_pe
+  examples: |
+    - What is your best advice for managing personal finances?
+- intent: faq/how_should_someone_start_saving_for_reti
+  examples: |
+    - How should someone start saving for retirement?
+- intent: faq/what_percentage_of_income_should_people_
+  examples: |
+    - What percentage of income should people save and invest?
+- intent: faq/how_do_you_think_about_budgeting_and_exp
+  examples: |
+    - How do you think about budgeting and expenses?
+- intent: faq/is_it_better_to_pay_off_debt_or_invest_e
+  examples: |
+    - Is it better to pay off debt or invest extra money?
+- intent: faq/what_advice_would_you_give_to_someone_in
+  examples: |
+    - What advice would you give to someone in their 20s about money?
+- intent: faq/how_can_the_average_person_build_wealth_
+  examples: |
+    - How can the average person build wealth over time?
+- intent: faq/what_are_the_biggest_financial_mistakes_
+  examples: |
+    - What are the biggest financial mistakes people make?
+- intent: faq/how_should_someone_prepare_financially_f
+  examples: |
+    - How should someone prepare financially for a recession?
+- intent: faq/do_you_think_real_estate_is_a_good_inves
+  examples: |
+    - Do you think real estate is a good investment for individuals?
+- intent: faq/what_do_you_think_about_credit_cards_and
+  examples: |
+    - What do you think about credit cards and debt?
+- intent: faq/how_do_you_balance_spending_and_saving_
+  examples: |
+    - How do you balance spending and saving?
+- intent: faq/what_s_your_opinion_on_financial_advisor
+  examples: |
+    - What’s your opinion on financial advisors?
+- intent: faq/how_should_people_think_about_charitable
+  examples: |
+    - How should people think about charitable giving?
+- intent: faq/what_are_your_thoughts_on_the_fire_finan
+  examples: |
+    - What are your thoughts on the FIRE (Financial Independence, Retire Early) movement?
+- intent: faq/how_do_you_approach_estate_planning_
+  examples: |
+    - How do you approach estate planning?
+- intent: faq/what_do_you_think_about_the_current_stat
+  examples: |
+    - What do you think about the current state of the economy?
+- intent: faq/how_do_economic_cycles_impact_investing_
+  examples: |
+    - How do economic cycles impact investing?
+- intent: faq/what_do_you_think_about_the_federal_rese
+  examples: |
+    - What do you think about the Federal Reserve's policies?
+- intent: faq/what_economic_indicators_do_you_pay_atte
+  examples: |
+    - What economic indicators do you pay attention to?
+- intent: faq/how_do_global_markets_affect_your_invest
+  examples: |
+    - How do global markets affect your investing strategy?
+- intent: faq/what_are_the_biggest_threats_to_the_stoc
+  examples: |
+    - What are the biggest threats to the stock market today?
+- intent: faq/how_does_the_government_impact_the_econo
+  examples: |
+    - How does the government impact the economy and investing?
+- intent: faq/what_is_your_opinion_on_the_u_s_national
+  examples: |
+    - What is your opinion on the U.S. national debt?
+- intent: faq/how_should_investors_think_about_geopoli
+  examples: |
+    - How should investors think about geopolitical risks?
+- intent: faq/how_do_you_approach_investing_in_interna
+  examples: |
+    - How do you approach investing in international markets?
+- intent: faq/what_are_the_most_important_life_lessons
+  examples: |
+    - What are the most important life lessons you've learned?
+- intent: faq/how_do_you_define_success_
+  examples: |
+    - How do you define success?
+- intent: faq/what_habits_have_contributed_most_to_you
+  examples: |
+    - What habits have contributed most to your success?
+- intent: faq/how_do_you_stay_motivated_and_discipline
+  examples: |
+    - How do you stay motivated and disciplined?
+- intent: faq/what_advice_would_you_give_to_young_peop
+  examples: |
+    - What advice would you give to young people about life?
+- intent: faq/how_do_you_approach_decision_making_
+  examples: |
+    - How do you approach decision-making?
+- intent: faq/what_do_you_think_about_work_life_balanc
+  examples: |
+    - What do you think about work-life balance?
+- intent: faq/what_role_does_luck_play_in_success_
+  examples: |
+    - What role does luck play in success?
+- intent: faq/how_do_you_handle_setbacks_and_failures_
+  examples: |
+    - How do you handle setbacks and failures?
+- intent: faq/what_s_the_best_piece_of_advice_you_ve_e
+  examples: |
+    - What’s the best piece of advice you've ever received?
+- intent: faq/what_do_you_think_about_formal_education
+  examples: |
+    - What do you think about formal education vs. self-education?
+- intent: faq/how_do_you_think_about_happiness_and_ful
+  examples: |
+    - How do you think about happiness and fulfillment?
+- intent: faq/what_are_your_thoughts_on_philanthropy_
+  examples: |
+    - What are your thoughts on philanthropy?
+- intent: faq/how_do_you_choose_who_to_surround_yourse
+  examples: |
+    - How do you choose who to surround yourself with?
+- intent: faq/what_are_your_favorite_books_outside_of_
+  examples: |
+    - What are your favorite books outside of investing?
+- intent: faq/how_important_is_reputation_in_life_and_
+  examples: |
+    - How important is reputation in life and business?
+- intent: faq/what_is_the_role_of_ethics_in_investing_
+  examples: |
+    - What is the role of ethics in investing and business?
+- intent: faq/what_do_you_think_about_lifelong_learnin
+  examples: |
+    - What do you think about lifelong learning?
+- intent: faq/how_do_you_manage_your_time_effectively_
+  examples: |
+    - How do you manage your time effectively?
+- intent: faq/what_makes_berkshire_hathaway_different_
+  examples: |
+    - What makes Berkshire Hathaway different from other companies?
+- intent: faq/how_do_you_choose_companies_to_acquire_f
+  examples: |
+    - How do you choose companies to acquire for Berkshire Hathaway?
+- intent: faq/what_do_you_think_about_the_future_of_be
+  examples: |
+    - What do you think about the future of Berkshire Hathaway?
+- intent: faq/how_do_you_ensure_the_company_s_culture_
+  examples: |
+    - How do you ensure the company's culture remains strong?
+- intent: faq/what_do_you_look_for_in_potential_succes
+  examples: |
+    - What do you look for in potential successors at Berkshire Hathaway?
+- intent: faq/how_do_you_handle_shareholders_and_their
+  examples: |
+    - How do you handle shareholders and their expectations?
+- intent: faq/what_do_you_think_is_the_most_important_
+  examples: |
+    - What do you think is the most important lesson from your career?
+- intent: faq/how_do_you_feel_about_the_impact_you_ve_
+  examples: |
+    - How do you feel about the impact you've had on investing?
+- intent: faq/what_is_the_biggest_misconception_people
+  examples: |
+    - What is the biggest misconception people have about you?
+- intent: faq/how_do_you_think_berkshire_hathaway_will
+  examples: |
+    - How do you think Berkshire Hathaway will perform in the future?
+- intent: faq/what_does_your_daily_routine_look_like_
+  examples: |
+    - What does your daily routine look like?
+- intent: faq/what_s_your_favorite_meal_at_mcdonald_s_
+  examples: |
+    - What’s your favorite meal at McDonald’s?
+- intent: faq/what_do_you_do_for_fun_outside_of_invest
+  examples: |
+    - What do you do for fun outside of investing?
+- intent: faq/what_is_your_favorite_movie_
+  examples: |
+    - What is your favorite movie?
+- intent: faq/who_are_some_of_the_people_you_admire_th
+  examples: |
+    - Who are some of the people you admire the most?
+- intent: faq/if_you_could_give_one_piece_of_advice_to
+  examples: |
+    - If you could give one piece of advice to your younger self, what would it be?
+- intent: faq/what_does_buffett_say_about_lifelong_lea
+  examples: |
+    - What does Buffett say about lifelong learning?
+- intent: faq/how_does_buffett_use_financial_statement
+  examples: |
+    - How does Buffett use financial statements?
+- intent: faq/how_does_buffett_use_historical_performa
+  examples: |
+    - How does Buffett use historical performance in risk evaluation?
+- intent: faq/how_does_buffett_define_investment_risk_
+  examples: |
+    - How does Buffett define investment risk?
+- intent: faq/what_s_buffett_s_view_on_bull_and_bear_m
+  examples: |
+    - What’s Buffett’s view on bull and bear markets?
+- intent: faq/why_does_buffett_avoid_trendy_or_high_te
+  examples: |
+    - Why does Buffett avoid trendy or high-tech stocks?
+- intent: faq/how_does_buffett_handle_rapid_tech_advan
+  examples: |
+    - How does Buffett handle rapid tech advancement?
+- intent: faq/what_s_buffett_s_approach_to_handling_un
+  examples: |
+    - What’s Buffett’s approach to handling uncertainty?
+- intent: faq/why_doesn_t_buffett_react_emotionally_to
+  examples: |
+    - Why doesn’t Buffett react emotionally to short-term volatility?
+- intent: faq/what_is_warren_buffett_s_core_investment
+  examples: |
+    - What is Warren Buffett's core investment philosophy?
+- intent: faq/how_does_buffett_avoid_herd_mentality_
+  examples: |
+    - How does Buffett avoid herd mentality?
+- intent: faq/how_does_buffett_update_his_views_on_ind
+  examples: |
+    - How does Buffett update his views on industries?
+- intent: faq/has_buffett_changed_his_view_on_banks_
+  examples: |
+    - Has Buffett changed his view on banks?
+- intent: faq/why_is_patience_a_core_psychological_tra
+  examples: |
+    - Why is patience a core psychological trait in investing?
+- intent: faq/why_does_buffett_hold_stocks_during_mark
+  examples: |
+    - Why does Buffett hold stocks during market downturns?
+- intent: faq/how_does_buffett_stay_focused_amid_hype_
+  examples: |
+    - How does Buffett stay focused amid hype?
+- intent: faq/does_buffett_believe_volatility_equals_r
+  examples: |
+    - Does Buffett believe volatility equals risk?
+- intent: faq/what_industries_does_buffett_prefer_to_i
+  examples: |
+    - What industries does Buffett prefer to invest in?
+- intent: faq/does_buffett_use_economic_forecasts_to_t
+  examples: |
+    - Does Buffett use economic forecasts to time purchases?
+- intent: faq/what_is_buffett_s_view_on_investing_in_u
+  examples: |
+    - What is Buffett's view on investing in unfamiliar sectors?
+- intent: faq/how_has_buffett_responded_to_the_rise_of
+  examples: |
+    - How has Buffett responded to the rise of passive investing?
+- intent: faq/how_does_buffett_approach_financial_leve
+  examples: |
+    - How does Buffett approach financial leverage?
+- intent: faq/has_buffett_always_followed_the_same_inv
+  examples: |
+    - Has Buffett always followed the same investment strategy?
+- intent: faq/what_mindset_does_buffett_encourage_duri
+  examples: |
+    - What mindset does Buffett encourage during downturns?
+- intent: faq/what_influenced_buffett_to_embrace_apple
+  examples: |
+    - What influenced Buffett to embrace Apple?
+- intent: faq/how_does_buffett_react_to_rapid_market_r
+  examples: |
+    - How does Buffett react to rapid market rallies?
+- intent: faq/why_does_buffett_value_flexibility_in_bu
+  examples: |
+    - Why does Buffett value flexibility in business models?
+- intent: faq/why_did_buffett_change_his_stance_on_sto
+  examples: |
+    - Why did Buffett change his stance on stock buybacks?
+- intent: faq/what_is_buffett_s_opinion_on_day_trading
+  examples: |
+    - What is Buffett’s opinion on day trading?
+- intent: faq/why_is_return_on_equity_important_to_buf
+  examples: |
+    - Why is return on equity important to Buffett?
+- intent: faq/what_is_the_key_to_buffett_s_timing_stra
+  examples: |
+    - What is the key to Buffett's timing strategy?
+- intent: faq/why_does_buffett_keep_large_cash_reserve
+  examples: |
+    - Why does Buffett keep large cash reserves?
+- intent: faq/what_s_buffett_s_view_on_financial_media
+  examples: |
+    - What’s Buffett’s view on financial media?
+- intent: faq/what_role_does_confidence_play_in_buffet
+  examples: |
+    - What role does confidence play in Buffett’s strategy?
+- intent: faq/what_role_does_intrinsic_value_play_in_b
+  examples: |
+    - What role does intrinsic value play in Buffett’s strategy?
+- intent: faq/why_doesn_t_buffett_chase_returns_
+  examples: |
+    - Why doesn’t Buffett chase returns?
+- intent: faq/what_does_buffett_say_about_trying_to_ti
+  examples: |
+    - What does Buffett say about trying to time the market?
+- intent: faq/what_is_buffett_s_circle_of_competence_
+  examples: |
+    - What is Buffett’s 'circle of competence'?
+- intent: faq/what_s_buffett_s_view_on_fomo_fear_of_mi
+  examples: |
+    - What’s Buffett’s view on FOMO (fear of missing out)?
+- intent: faq/what_does_buffett_think_about_regret_in_
+  examples: |
+    - What does Buffett think about regret in investing?
+- intent: faq/how_does_buffett_define_a_wonderful_comp
+  examples: |
+    - How does Buffett define a 'wonderful company'?
+- intent: faq/what_does_buffett_mean_by_economic_moat_
+  examples: |
+    - What does Buffett mean by 'economic moat'?
+- intent: faq/why_does_buffett_avoid_emotional_decisio
+  examples: |
+    - Why does Buffett avoid emotional decision-making?
+- intent: faq/how_does_buffett_choose_when_to_enter_a_
+  examples: |
+    - How does Buffett choose when to enter a stock?
+- intent: faq/how_has_berkshire_hathaway_evolved_over_
+  examples: |
+    - How has Berkshire Hathaway evolved over time?
+- intent: faq/how_does_buffett_handle_fear_in_the_mark
+  examples: |
+    - How does Buffett handle fear in the market?
+- intent: faq/what_is_buffett_s_advice_for_staying_rat
+  examples: |
+    - What is Buffett’s advice for staying rational?
+- intent: faq/why_does_buffett_avoid_speculation_
+  examples: |
+    - Why does Buffett avoid speculation?
+- intent: faq/does_buffett_believe_in_taking_high_risk
+  examples: |
+    - Does Buffett believe in taking high risks for high returns?
+- intent: faq/does_buffett_sell_stocks_based_on_timing
+  examples: |
+    - Does Buffett sell stocks based on timing predictions?
+- intent: faq/does_buffett_try_to_buy_at_the_lowest_pr
+  examples: |
+    - Does Buffett try to buy at the lowest price?
+- intent: faq/when_does_buffett_typically_increase_his
+  examples: |
+    - When does Buffett typically increase his cash holdings?
+- intent: faq/how_does_buffett_ensure_downside_protect
+  examples: |
+    - How does Buffett ensure downside protection?
+- intent: faq/how_has_buffett_adapted_to_global_invest
+  examples: |
+    - How has Buffett adapted to global investing?
+- intent: faq/why_does_buffett_avoid_businesses_he_doe
+  examples: |
+    - Why does Buffett avoid businesses he doesn’t understand?
+- intent: faq/how_does_buffett_use_market_pessimism_to
+  examples: |
+    - How does Buffett use market pessimism to his advantage?
+- intent: faq/what_is_buffett_s_rule_1_
+  examples: |
+    - What is Buffett’s rule #1?
+- intent: faq/how_does_buffett_evaluate_modern_ceos_
+  examples: |
+    - How does Buffett evaluate modern CEOs?
+- intent: faq/does_buffett_ignore_modern_market_change
+  examples: |
+    - Does Buffett ignore modern market changes?
+- intent: faq/has_buffett_ever_embraced_new_accounting
+  examples: |
+    - Has Buffett ever embraced new accounting methods?
+- intent: faq/what_psychological_traits_make_a_good_in
+  examples: |
+    - What psychological traits make a good investor according to Buffett?
+- intent: faq/what_is_the_margin_of_safety_principle_
+  examples: |
+    - What is the margin of safety principle?
+- intent: faq/what_s_a_key_to_avoiding_panic_selling_
+  examples: |
+    - What’s a key to avoiding panic selling?
+- intent: faq/what_are_the_key_principles_of_value_inv
+  examples: |
+    - What are the key principles of value investing?
+- intent: faq/how_does_buffett_view_speculative_invest
+  examples: |
+    - How does Buffett view speculative investments?
+- intent: faq/why_does_buffett_rarely_change_his_mind_
+  examples: |
+    - Why does Buffett rarely change his mind quickly?
+- intent: faq/what_s_buffett_s_opinion_on_investing_ba
+  examples: |
+    - What’s Buffett’s opinion on investing based on hype?
+- intent: faq/what_is_buffett_s_view_on_investing_in_i
+  examples: |
+    - What is Buffett's view on investing in IPOs?
+- intent: faq/how_does_buffett_manage_portfolio_evolut
+  examples: |
+    - How does Buffett manage portfolio evolution?
+- intent: faq/why_does_buffett_avoid_excessive_diversi
+  examples: |
+    - Why does Buffett avoid excessive diversification?
+- intent: faq/why_does_buffett_favor_predictable_busin
+  examples: |
+    - Why does Buffett favor predictable business models?
+- intent: faq/how_does_buffett_evaluate_a_company_s_ma
+  examples: |
+    - How does Buffett evaluate a company's management?
+- intent: faq/what_does_buffett_believe_about_changing
+  examples: |
+    - What does Buffett believe about changing your mind?
+- intent: faq/what_role_does_debt_play_in_buffett_s_ri
+  examples: |
+    - What role does debt play in Buffett’s risk assessment?
+- intent: faq/how_does_buffett_determine_when_a_stock_
+  examples: |
+    - How does Buffett determine when a stock is undervalued?
+- intent: faq/why_does_buffett_prefer_long_term_invest
+  examples: |
+    - Why does Buffett prefer long-term investing over market timing?
+- intent: faq/how_does_buffett_respond_to_market_crash
+  examples: |
+    - How does Buffett respond to market crashes?
+- intent: faq/why_does_buffett_avoid_fast_changing_ind
+  examples: |
+    - Why does Buffett avoid fast-changing industries?
+- intent: faq/how_does_buffett_view_buying_during_mark
+  examples: |
+    - How does Buffett view buying during market corrections?
+- intent: faq/how_did_buffett_behave_during_the_2008_f
+  examples: |
+    - How did Buffett behave during the 2008 financial crisis?
+- intent: faq/how_does_buffett_develop_conviction_in_i
+  examples: |
+    - How does Buffett develop conviction in investments?
+- intent: faq/how_has_buffett_s_capital_allocation_cha
+  examples: |
+    - How has Buffett’s capital allocation changed over decades?
+- intent: faq/why_does_buffett_prefer_investing_in_pro
+  examples: |
+    - Why does Buffett prefer investing in productive assets?
+- intent: faq/does_buffett_consider_esg_factors_
+  examples: |
+    - Does Buffett consider ESG factors?
+- intent: faq/why_does_buffett_focus_on_companies_with
+  examples: |
+    - Why does Buffett focus on companies with a competitive advantage?
+- intent: faq/how_often_does_buffett_trade_stocks_
+  examples: |
+    - How often does Buffett trade stocks?
+- intent: faq/why_does_buffett_like_dividend_paying_co
+  examples: |
+    - Why does Buffett like dividend-paying companies?
+- intent: faq/what_is_the_role_of_patience_in_buffett_
+  examples: |
+    - What is the role of patience in Buffett's strategy?
+- intent: faq/what_is_buffett_s_view_on_investor_overc
+  examples: |
+    - What is Buffett’s view on investor overconfidence?
+- intent: faq/how_does_buffett_assess_a_company_s_fina
+  examples: |
+    - How does Buffett assess a company's financial strength?
+- intent: faq/why_did_buffett_start_investing_in_tech_
+  examples: |
+    - Why did Buffett start investing in tech companies later in life?
+- intent: faq/why_doesn_t_buffett_worry_about_short_te
+  examples: |
+    - Why doesn't Buffett worry about short-term price drops?
+- intent: faq/does_buffett_follow_technical_analysis_
+  examples: |
+    - Does Buffett follow technical analysis?
+- intent: faq/what_s_an_example_of_buffett_admitting_a
+  examples: |
+    - What’s an example of Buffett admitting a mistake?
+- intent: faq/what_are_the_key_criteria_buffett_uses_t
+  examples: |
+    - What are the key criteria Buffett uses to select stocks?
+- intent: faq/how_does_buffett_feel_about_short_term_m
+  examples: |
+    - How does Buffett feel about short-term market forecasts?
+- intent: faq/what_analogy_does_buffett_use_for_market
+  examples: |
+    - What analogy does Buffett use for market timing?
+- intent: faq/how_does_buffett_reduce_risk_in_his_port
+  examples: |
+    - How does Buffett reduce risk in his portfolio?
+- intent: faq/how_does_buffett_define_temperament_in_i
+  examples: |
+    - How does Buffett define temperament in investing?
+- intent: faq/what_is_buffett_s_attitude_toward_perman
+  examples: |
+    - What is Buffett’s attitude toward permanent capital loss?
+- intent: faq/what_is_buffett_s_take_on_greed_
+  examples: |
+    - What is Buffett's take on greed?
+- intent: faq
+  examples: |
+    - How do you determine if a stock is undervalued?
