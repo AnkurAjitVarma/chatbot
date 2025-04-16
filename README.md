@@ -20,9 +20,13 @@ This project is a Rasa-based chatbot. Follow the steps below to set up and start
    python -m venv venv
    source venv/bin/activate
    
-3. **Install Dependencies**:
+3. **Install Rasa**:
    ```bash
-   pip install -r requirements.txt
+   pip install rasa
+
+4. **Train the model**:
+   ```bash
+   rasa train
 
 # Starting the Chatbot
 
